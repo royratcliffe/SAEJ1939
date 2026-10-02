@@ -81,6 +81,8 @@ def parse_st_file(path):
     if lines or sections:
         sections.append((label, "\n".join(lines)))
 
+    # Remove empty sections from the beginning and end of the list.
+    # Pop sections from the start if both the label and content are empty.
     while sections and not sections[0][0] and not sections[0][1]:
         sections.pop(0)
     while sections and not sections[-1][0] and not sections[-1][1]:
