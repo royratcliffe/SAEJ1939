@@ -57,13 +57,13 @@
               "TextDocument": {
                 "@Type": "f3878285",
                 "@Value": {
-                  "TextBlobForSerialisation": "(string){attribute 'qualified_only'}\n{attribute 'strict'}\nTYPE\n    EngineOperatingState :\n    (\n        EngineStopped := 2#0000,\n        PreStart := 2#0001,\n        Starting := 2#0010,\n        WarmUp := 2#0011,\n        Running := 2#0100,\n        CoolDown := 2#0101,\n        EngineStopping := 2#0110,\n        PostRun := 2#0111,\n        AvailableForSAEAssignment8 := 2#1000,\n        AvailableForSAEAssignment9 := 2#1001,\n        AvailableForSAEAssignment10 := 2#1010,\n        AvailableForSAEAssignment11 := 2#1011,\n        AvailableForSAEAssignment12 := 2#1100,\n        AvailableForSAEAssignment13 := 2#1101,\n        Reserved := 2#1110,\n        NotAvailable := 2#1111\n    );\nEND_TYPE\n",
+                  "TextBlobForSerialisation": "(string){attribute 'qualified_only'}\n{attribute 'strict'}\nTYPE EngineOperatingState : (\n        EngineStopped               := 2#0000,\n        PreStart                    := 2#0001,\n        Starting                    := 2#0010,\n        WarmUp                      := 2#0011,\n        Running                     := 2#0100,\n        CoolDown                    := 2#0101,\n        EngineStopping              := 2#0110,\n        PostRun                     := 2#0111,\n        AvailableForSAEAssignment8  := 2#1000,\n        AvailableForSAEAssignment9  := 2#1001,\n        AvailableForSAEAssignment10 := 2#1010,\n        AvailableForSAEAssignment11 := 2#1011,\n        AvailableForSAEAssignment12 := 2#1100,\n        AvailableForSAEAssignment13 := 2#1101,\n        Reserved                    := 2#1110,\n        NotAvailable                := 2#1111\n    );\nEND_TYPE\n",
                   "LineInfoPersistence": "(string)c6324bbc-fc60-4d6d-96b9-da659b1f0b0d_Decl_LineIds"
                 }
               }
             }
           },
-          "UniqueIdGenerator": "(string)29"
+          "UniqueIdGenerator": "(string)159"
         }
       },
       "TypeInfos": {
