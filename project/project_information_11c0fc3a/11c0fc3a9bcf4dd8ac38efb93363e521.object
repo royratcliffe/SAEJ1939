@@ -29,9 +29,9 @@
           "Properties": {
             "@Type": "Hashtable:IDictionary",
             "@Value": {
-              "Author": "(string)CODESYS Development GmbH",
-              "Company": "(string)CODESYS",
-              "DefaultNamespace": "(string)TMP",
+              "Author": "(string)Roy Ratcliffe",
+              "Company": "(string)Roy Ratcliffe",
+              "DefaultNamespace": "(string)J1939",
               "Description": "(string)A interface library project template with all possible element types, docu and a sample project structure",
               "DocFormat": "(string)reStructuredText",
               "IsInterfaceLibrary": "(bool)True",
@@ -722,7 +722,7 @@
               },
               "Project": "(string)",
               "Released": "(bool)False",
-              "Title": "(string)CODESYS Library Template Interfaces",
+              "Title": "(string)SAE J1939 Interfaces",
               "Version": {
                 "@Type": "78562ae7",
                 "@Value": {

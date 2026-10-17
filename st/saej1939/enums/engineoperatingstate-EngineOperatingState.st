@@ -2,8 +2,8 @@
 {attribute 'qualified_only'}
 {attribute 'strict'}
 (* Engine Operating Information (EOI) contains engine parameters related
-to operation. The Engine Operating State indicates the engine's current
-operating state or mode. *)
+   to operation. The Engine Operating State indicates the engine's current
+   operating state or mode. *)
 TYPE EngineOperatingState : (
 		EngineStopped               := 2#0000,
 		PreStart                    := 2#0001,
