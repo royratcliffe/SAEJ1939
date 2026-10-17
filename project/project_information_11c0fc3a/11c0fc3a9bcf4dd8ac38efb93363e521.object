@@ -32,7 +32,7 @@
               "Author": "(string)Roy Ratcliffe",
               "Company": "(string)Roy Ratcliffe",
               "DefaultNamespace": "(string)J1939",
-              "Description": "(string)A interface library project template with all possible element types, docu and a sample project structure",
+              "Description": "(string)An interface library project for SAE J1939 element types, enumerations and constants",
               "DocFormat": "(string)reStructuredText",
               "IsInterfaceLibrary": "(bool)True",
               "LanguageModelAttribute": "(string)qualified-access-only",
@@ -720,6 +720,7 @@
                 "@Type": "[Guid]",
                 "@Value": []
               },
+              "Placeholder": "(string)SAEJ1939",
               "Project": "(string)",
               "Released": "(bool)False",
               "Title": "(string)SAE J1939 Interfaces",
