@@ -4,9 +4,9 @@
       "Graph": {
         "@Type": "81297157",
         "@Value": {
-          "Guid": "(Guid)f13851e4-c15c-4448-a3cc-5ae43fe11b73",
+          "Guid": "(Guid)c6324bbc-fc60-4d6d-96b9-da659b1f0b0d",
           "ParentGuid": "(Guid)00000000-0000-0000-0000-000000000000",
-          "Name": "(string)ERROR",
+          "Name": "(string)EngineOperatingState",
           "Properties": {
             "@Type": "2c41fa04:IDictionary",
             "@Value": [
@@ -57,13 +57,13 @@
               "TextDocument": {
                 "@Type": "f3878285",
                 "@Value": {
-                  "TextBlobForSerialisation": "(string){attribute 'qualified_only'}\n//{attribute 'conditionalshow' := 'SomeText'}\n//{attribute 'conditionalshow'}\n//{attribute 'hide'}\nTYPE ERROR : (NO_ERROR, TIME_OUT); END_TYPE\n",
-                  "LineInfoPersistence": "(string)f13851e4-c15c-4448-a3cc-5ae43fe11b73_Decl_LineIds"
+                  "TextBlobForSerialisation": "(string){attribute 'qualified_only'}\n{attribute 'strict'}\n(* Engine Operating Information (EOI) contains engine parameters related\n   to operation. The Engine Operating State indicates the engine's current\n   operating state or mode. *)\nTYPE EngineOperatingState : (\n\t\tEngineStopped               := 2#0000,\n\t\tPreStart                    := 2#0001,\n\t\tStarting                    := 2#0010,\n\t\tWarmUp                      := 2#0011,\n\t\tRunning                     := 2#0100,\n\t\tCoolDown                    := 2#0101,\n\t\tEngineStopping              := 2#0110,\n\t\tPostRun                     := 2#0111,\n\t\tAvailableForSAEAssignment8  := 2#1000,\n\t\tAvailableForSAEAssignment9  := 2#1001,\n\t\tAvailableForSAEAssignment10 := 2#1010,\n\t\tAvailableForSAEAssignment11 := 2#1011,\n\t\tAvailableForSAEAssignment12 := 2#1100,\n\t\tAvailableForSAEAssignment13 := 2#1101,\n\t\tReserved                    := 2#1110,\n\t\tNotAvailable                := 2#1111\n\t);\nEND_TYPE\n",
+                  "LineInfoPersistence": "(string)c6324bbc-fc60-4d6d-96b9-da659b1f0b0d_Decl_LineIds"
                 }
               }
             }
           },
-          "UniqueIdGenerator": "(string)14"
+          "UniqueIdGenerator": "(string)399"
         }
       },
       "TypeInfos": {

@@ -4,9 +4,9 @@
       "Graph": {
         "@Type": "81297157",
         "@Value": {
-          "Guid": "(Guid)c6324bbc-fc60-4d6d-96b9-da659b1f0b0d",
+          "Guid": "(Guid)61a71296-3b39-4b4c-9e67-cea520fcd5cc",
           "ParentGuid": "(Guid)00000000-0000-0000-0000-000000000000",
-          "Name": "(string)EngineOperatingState",
+          "Name": "(string)Constants",
           "Properties": {
             "@Type": "2c41fa04:IDictionary",
             "@Value": [
@@ -20,7 +20,7 @@
                       "@Value": [
                         {
                           "@Key": "(Guid)21af5390-2942-461a-bf89-951aaf6999f1",
-                          "@Value": "(Guid)d53bc083-e605-4995-83a3-a94382ab23f1"
+                          "@Value": "(Guid)c7dbe0db-e4b7-4ad4-a8e9-a965e037c1d2"
                         }
                       ]
                     }
@@ -29,7 +29,7 @@
               }
             ]
           },
-          "TypeGuid": "(Guid)2db5746d-d284-4425-9f7f-2663a34b0ebc",
+          "TypeGuid": "(Guid)ffbfa93a-b94d-45fc-a329-229860183b1d",
           "EmbeddedTypeGuids": {
             "@Type": "[Guid]",
             "@Value": [
@@ -49,7 +49,7 @@
     },
     "object": {
       "Graph": {
-        "@Type": "2db5746d",
+        "@Type": "ffbfa93a",
         "@Value": {
           "Interface": {
             "@Type": "a9ed5b7e",
@@ -57,19 +57,22 @@
               "TextDocument": {
                 "@Type": "f3878285",
                 "@Value": {
-                  "TextBlobForSerialisation": "(string){attribute 'qualified_only'}\n{attribute 'strict'}\nTYPE\n    EngineOperatingState :\n    (\n        EngineStopped := 2#0000,\n        PreStart := 2#0001,\n        Starting := 2#0010,\n        WarmUp := 2#0011,\n        Running := 2#0100,\n        CoolDown := 2#0101,\n        EngineStopping := 2#0110,\n        PostRun := 2#0111,\n        AvailableForSAEAssignment8 := 2#1000,\n        AvailableForSAEAssignment9 := 2#1001,\n        AvailableForSAEAssignment10 := 2#1010,\n        AvailableForSAEAssignment11 := 2#1011,\n        AvailableForSAEAssignment12 := 2#1100,\n        AvailableForSAEAssignment13 := 2#1101,\n        Reserved := 2#1110,\n        NotAvailable := 2#1111\n    );\nEND_TYPE\n",
-                  "LineInfoPersistence": "(string)c6324bbc-fc60-4d6d-96b9-da659b1f0b0d_Decl_LineIds"
+                  "TextBlobForSerialisation": "(string){attribute 'conditionalshow' := 'DevMode'}\n{attribute 'conditionalshow'}\n{attribute 'hide'}\nVAR_GLOBAL CONSTANT\nEND_VAR\n",
+                  "LineInfoPersistence": "(string)61a71296-3b39-4b4c-9e67-cea520fcd5cc_Decl_LineIds"
                 }
               }
             }
           },
-          "UniqueIdGenerator": "(string)29"
+          "NetVarProperties": null,
+          "ParameterList": "(bool)False",
+          "AddAttributeSubsequent": "(bool)False"
         }
       },
       "TypeInfos": {
-        "2db5746d": "{2db5746d-d284-4425-9f7f-2663a34b0ebc}",
         "a9ed5b7e": "{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}",
+        "bool": "System.Boolean",
         "f3878285": "{f3878285-8e4f-490b-bb1b-9acbb7eb04db}",
+        "ffbfa93a": "{ffbfa93a-b94d-45fc-a329-229860183b1d}",
         "string": "System.String"
       }
     }

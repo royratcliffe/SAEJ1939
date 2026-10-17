@@ -4,9 +4,9 @@
       "Graph": {
         "@Type": "81297157",
         "@Value": {
-          "Guid": "(Guid)61a71296-3b39-4b4c-9e67-cea520fcd5cc",
+          "Guid": "(Guid)f13851e4-c15c-4448-a3cc-5ae43fe11b73",
           "ParentGuid": "(Guid)00000000-0000-0000-0000-000000000000",
-          "Name": "(string)Constants",
+          "Name": "(string)ERROR",
           "Properties": {
             "@Type": "2c41fa04:IDictionary",
             "@Value": [
@@ -20,7 +20,7 @@
                       "@Value": [
                         {
                           "@Key": "(Guid)21af5390-2942-461a-bf89-951aaf6999f1",
-                          "@Value": "(Guid)c7dbe0db-e4b7-4ad4-a8e9-a965e037c1d2"
+                          "@Value": "(Guid)d53bc083-e605-4995-83a3-a94382ab23f1"
                         }
                       ]
                     }
@@ -29,7 +29,7 @@
               }
             ]
           },
-          "TypeGuid": "(Guid)ffbfa93a-b94d-45fc-a329-229860183b1d",
+          "TypeGuid": "(Guid)2db5746d-d284-4425-9f7f-2663a34b0ebc",
           "EmbeddedTypeGuids": {
             "@Type": "[Guid]",
             "@Value": [
@@ -49,7 +49,7 @@
     },
     "object": {
       "Graph": {
-        "@Type": "ffbfa93a",
+        "@Type": "2db5746d",
         "@Value": {
           "Interface": {
             "@Type": "a9ed5b7e",
@@ -57,22 +57,19 @@
               "TextDocument": {
                 "@Type": "f3878285",
                 "@Value": {
-                  "TextBlobForSerialisation": "(string)//{attribute 'conditionalshow' := 'SomeText'}\n//{attribute 'conditionalshow'}\n//{attribute 'hide'}\nVAR_GLOBAL CONSTANT\nEND_VAR",
-                  "LineInfoPersistence": "(string)61a71296-3b39-4b4c-9e67-cea520fcd5cc_Decl_LineIds"
+                  "TextBlobForSerialisation": "(string){attribute 'qualified_only'}\n{attribute 'conditionalshow' := 'DevMode'}\n{attribute 'conditionalshow'}\n{attribute 'hide'}\nTYPE ERROR : (\n\t\tNO_ERROR,\n\t\tTIME_OUT\n\t);\nEND_TYPE\n",
+                  "LineInfoPersistence": "(string)f13851e4-c15c-4448-a3cc-5ae43fe11b73_Decl_LineIds"
                 }
               }
             }
           },
-          "NetVarProperties": null,
-          "ParameterList": "(bool)False",
-          "AddAttributeSubsequent": "(bool)False"
+          "UniqueIdGenerator": "(string)142"
         }
       },
       "TypeInfos": {
+        "2db5746d": "{2db5746d-d284-4425-9f7f-2663a34b0ebc}",
         "a9ed5b7e": "{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}",
-        "bool": "System.Boolean",
         "f3878285": "{f3878285-8e4f-490b-bb1b-9acbb7eb04db}",
-        "ffbfa93a": "{ffbfa93a-b94d-45fc-a329-229860183b1d}",
         "string": "System.String"
       }
     }
