@@ -1,0 +1,78 @@
+{
+  "payload": {
+    "meta": {
+      "Graph": {
+        "@Type": "81297157",
+        "@Value": {
+          "Guid": "(Guid)19552db3-a3b1-4164-838d-2b7c4260385b",
+          "ParentGuid": "(Guid)00000000-0000-0000-0000-000000000000",
+          "Name": "(string)GearRequested",
+          "Properties": {
+            "@Type": "2c41fa04:IDictionary",
+            "@Value": [
+              {
+                "@Key": "(Guid)829a18f2-c514-4f6e-9634-1df173429203",
+                "@Value": {
+                  "@Type": "829a18f2",
+                  "@Value": {
+                    "ParentObjects": {
+                      "@Type": "fa2ee218:IDictionary",
+                      "@Value": [
+                        {
+                          "@Key": "(Guid)21af5390-2942-461a-bf89-951aaf6999f1",
+                          "@Value": "(Guid)d53bc083-e605-4995-83a3-a94382ab23f1"
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "TypeGuid": "(Guid)2db5746d-d284-4425-9f7f-2663a34b0ebc",
+          "EmbeddedTypeGuids": {
+            "@Type": "[Guid]",
+            "@Value": [
+              "(Guid)a9ed5b7e-75c5-4651-af16-d2c27e98cb94"
+            ]
+          }
+        }
+      },
+      "TypeInfos": {
+        "2c41fa04": "{2c41fa04-1834-41c1-816e-303c7aa2c05b}",
+        "81297157": "{81297157-7ec9-45ce-845e-84cab2b88ade}",
+        "829a18f2": "{829a18f2-c514-4f6e-9634-1df173429203}",
+        "fa2ee218": "{fa2ee218-a39b-4b6d-b249-49dbddbd168a}",
+        "Guid": "System.Guid",
+        "string": "System.String"
+      }
+    },
+    "object": {
+      "Graph": {
+        "@Type": "2db5746d",
+        "@Value": {
+          "Interface": {
+            "@Type": "a9ed5b7e",
+            "@Value": {
+              "TextDocument": {
+                "@Type": "f3878285",
+                "@Value": {
+                  "TextBlobForSerialisation": "(string){attribute 'qualified_only'}\n{attribute 'strict'}\n(* Gear request indicators; numeric gear values and reserved ranges are not enum members. *)\nTYPE GearRequested : (\n\t\tHoldCurrentGear                   := 16#FD,\n\t\tForwardDrivePosition              := 16#FC,\n\t\tParkPosition                      := 16#FB,\n\t\tForwardLowPosition                := 16#FA,\n\t\tUpshiftOneGear                    := 16#F9,\n\t\tUpshiftTwoGears                   := 16#F8,\n\t\tDownshiftOneGear                  := 16#F7,\n\t\tDownshiftTwoGears                 := 16#F6,\n\t\tDriveMinus1                       := 16#F5,\n\t\tDriveMinus2                       := 16#F4,\n\t\tDriveMinus3                       := 16#F3,\n\t\tDriveMinus4                       := 16#F2,\n\t\tDriveMinus5                       := 16#F1,\n\t\tDriveMinus6                       := 16#F0,\n\t\tDriveMinus7                       := 16#EF,\n\t\tBetweenShiftSelectorPositions     := 16#EE,\n\t\tBetweenReverseSelectorPositions   := 16#ED,\n\t\tBetweenForwardSelectorPositions   := 16#EC,\n\t\tBetweenD7AndD6                    := 16#EB,\n\t\tBetweenD6AndD5                    := 16#EA,\n\t\tBetweenD5AndD4                    := 16#E9,\n\t\tBetweenD4AndD3                    := 16#E8,\n\t\tBetweenD3AndD2                    := 16#E7,\n\t\tBetweenD2AndD1                    := 16#E6,\n\t\tBetweenD1AndDrive                 := 16#E5,\n\t\tBetweenDriveAndNeutral            := 16#E4,\n\t\tBetweenNeutralAndReverse          := 16#E3,\n\t\tBetweenReverseAndPark             := 16#E2,\n\t\tReselectCurrentPosition           := 16#E1,\n\t\tPositionUnknownOrNoButtonsPressed := 16#E0,\n\t\tReverseSelectorPosition           := 16#DF\n\t);\nEND_TYPE\n",
+                  "LineInfoPersistence": "(string)19552db3-a3b1-4164-838d-2b7c4260385b_Decl_LineIds"
+                }
+              }
+            }
+          },
+          "UniqueIdGenerator": "(string)76"
+        }
+      },
+      "TypeInfos": {
+        "2db5746d": "{2db5746d-d284-4425-9f7f-2663a34b0ebc}",
+        "a9ed5b7e": "{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}",
+        "f3878285": "{f3878285-8e4f-490b-bb1b-9acbb7eb04db}",
+        "string": "System.String"
+      }
+    }
+  },
+  "FormatVersion": "1.0"
+}
