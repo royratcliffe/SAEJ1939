@@ -2,7 +2,7 @@
   <Settings AutoPerform="FALSE" />
   <Rules>
     <Rule Name="Rules" Id="0" Activated="FALSE" Warning="FALSE">
-      <Rule Name="Unreachable code" Id="1" Activated="FALSE" Warning="FALSE" />
+      <Rule Name="Unreachable code" Id="1" Activated="TRUE" Warning="TRUE" />
       <Rule Name="Empty objects" Id="2" Activated="FALSE" Warning="FALSE" />
       <Rule Name="Empty statements" Id="3" Activated="FALSE" Warning="FALSE" />
       <Rule Name="Multiple write access on output" Id="4" Activated="TRUE" Warning="FALSE" />
@@ -13,15 +13,15 @@
       <Rule Name="Arrays with only one component" Id="10" Activated="FALSE" Warning="FALSE" />
       <Rule Name="Useless declarations. Struct/Enum with only a single member should not be used" Id="11" Activated="FALSE" Warning="FALSE" />
       <Rule Name="Variables which could be declared as constants" Id="12" Activated="FALSE" Warning="FALSE" />
-      <Rule Name="Declarations with the same variable name" Id="13" Activated="FALSE" Warning="FALSE" />
+      <Rule Name="Declarations with the same variable name" Id="13" Activated="TRUE" Warning="TRUE" />
       <Rule Name="Assignment of instances" Id="14" Activated="TRUE" Warning="FALSE" />
       <Rule Name="Access to global data via FB_Init" Id="15" Activated="TRUE" Warning="FALSE" />
       <Rule Name="Gaps in structures" Id="16" Activated="FALSE" Warning="FALSE" />
       <Rule Name="Unusual assignment to pointer variable" Id="17" Activated="TRUE" Warning="FALSE" />
       <Rule Name="Unusual bit access" Id="18" Activated="TRUE" Warning="FALSE" />
-      <Rule Name="Possibly assignment of truncated value to REAL variable" Id="20" Activated="FALSE" Warning="FALSE" />
+      <Rule Name="Possibly assignment of truncated value to REAL variable" Id="20" Activated="TRUE" Warning="TRUE" />
       <Rule Name="Transporting the address of a temporary variable" Id="21" Activated="TRUE" Warning="FALSE" />
-      <Rule Name="(Possibly) unassigned return value" Id="22" Activated="FALSE" Warning="FALSE" />
+      <Rule Name="(Possibly) unassigned return value" Id="22" Activated="TRUE" Warning="TRUE" />
       <Rule Name="Complex return values" Id="23" Activated="FALSE" Warning="FALSE" />
       <Rule Name="Untyped literals / constants" Id="24" Activated="FALSE" Warning="FALSE" />
       <Rule Name="Unqualified enumeration constants" Id="25" Activated="TRUE" Warning="FALSE" />
@@ -60,7 +60,7 @@
         <Rule Name="Comparison operations on BOOL variables" Id="51" Activated="TRUE" Warning="FALSE" />
         <Rule Name="Unusual shift operation" Id="52" Activated="TRUE" Warning="FALSE" />
         <Rule Name="Too big bitwise shift" Id="53" Activated="TRUE" Warning="FALSE" />
-        <Rule Name="Comparisons of REAL/LREAL for equality/inequality" Id="54" Activated="FALSE" Warning="FALSE" />
+        <Rule Name="Comparisons of REAL/LREAL for equality/inequality" Id="54" Activated="TRUE" Warning="TRUE" />
         <Rule Name="Unnecessary comparisons of unsigned operands" Id="55" Activated="TRUE" Warning="FALSE" />
         <Rule Name="Constant out of valid range" Id="56" Activated="TRUE" Warning="FALSE" />
         <Rule Name="Possible loss of decimal places" Id="57" Activated="TRUE" Warning="FALSE" />
@@ -98,7 +98,7 @@
         <Exceptions />
       </Rule>
       <Rule Name="Access to program/fb variables from the outside" Id="102" Activated="FALSE" Warning="FALSE" />
-      <Rule Name="Concurrent access on not atomic data" Id="103" Activated="FALSE" Warning="FALSE" />
+      <Rule Name="Concurrent access on not atomic data" Id="103" Activated="TRUE" Warning="TRUE" />
       <Rule Name="Multiple instance calls" Id="105" Activated="FALSE" Warning="FALSE" />
       <Rule Name="Virtual method calls in FB_INIT" Id="106" Activated="FALSE" Warning="FALSE" />
       <Rule Name="Missing formal parameters" Id="107" Activated="FALSE" Warning="FALSE" />
@@ -118,7 +118,7 @@
         <Rule Name="Unusual bit access - strict" Id="148" Activated="FALSE" Warning="FALSE" />
       </Rule>
       <Rule Name="Statements commented out" Id="140" Activated="TRUE" Warning="FALSE" />
-      <Rule Name="Possible use of uninitialised variables" Id="146" Activated="FALSE" Warning="FALSE">
+      <Rule Name="Possible use of uninitialised variables" Id="146" Activated="TRUE" Warning="TRUE">
         <Rule Name="Possible null pointer dereferences" Id="39" Activated="TRUE" Warning="FALSE" />
         <Rule Name="Possible use of not initialised reference" Id="145" Activated="TRUE" Warning="FALSE" />
       </Rule>
@@ -145,7 +145,7 @@
       <Rule Name="Address of an output variable should not be taken" Id="170" Activated="TRUE" Warning="FALSE" />
       <Rule Name="Enumerations should have the attribute 'strict'" Id="171" Activated="FALSE" Warning="FALSE" />
       <Rule Name="Possible attempt to access outside the bounds of the array" Id="172" Activated="TRUE" Warning="FALSE" />
-      <Rule Name="Suspicious operation on string" Id="175" Activated="FALSE" Warning="FALSE" />
+      <Rule Name="Suspicious operation on string" Id="175" Activated="TRUE" Warning="TRUE" />
       <Rule Name="Metrics" Id="177" Activated="FALSE" Warning="FALSE">
         <Rule Name="Cognitive Complexity" Id="178" Activated="TRUE" Warning="FALSE">
           <CognitiveComplexityLimit>20</CognitiveComplexityLimit>
