@@ -13,6 +13,12 @@
       ]
     },
     {
+      "label": "install pre-commit hook",
+      "type": "shell",
+      "command": "git config core.hooksPath scripts",
+      "problemMatcher": []
+    },
+    {
       "label": "watch_extract_st",
       "type": "shell",
       "command": "python scripts/watch_extract_st.py",
@@ -38,12 +44,6 @@
         "$python"
       ],
       "dependsOn": []
-    },
-    {
-      "label": "install pre-commit hook",
-      "type": "shell",
-      "command": "git config core.hooksPath scripts",
-      "problemMatcher": []
     },
     {
       "label": "update_version",
