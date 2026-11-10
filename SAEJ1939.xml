@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project xmlns="http://www.plcopen.org/xml/tc6_0200">
+  <fileHeader companyName="" productName="CODESYS" productVersion="CODESYS V3.5 SP22 Patch 4" creationDateTime="2026-11-09T15:29:37.0282261" />
+  <contentHeader name="SAE J1939 Interfaces" version="0.0.2.0" modificationDateTime="2026-11-09T15:28:15.6809992" organization="Roy Ratcliffe" author="Roy Ratcliffe">
+    <Comment>An interface library project for SAE J1939 element types, enumerations and constants</Comment>
+    <coordinateInfo>
+      <fbd>
+        <scaling x="1" y="1" />
+      </fbd>
+      <ld>
+        <scaling x="1" y="1" />
+      </ld>
+      <sfc>
+        <scaling x="1" y="1" />
+      </sfc>
+    </coordinateInfo>
+    <addData>
+      <data name="http://www.3s-software.com/plcopenxml/projectinformation" handleUnknown="implementation">
+        <ProjectInformation>
+          <property name="Author" type="string">Roy Ratcliffe</property>
+          <property name="Company" type="string">Roy Ratcliffe</property>
+          <property name="DefaultNamespace" type="string">SAEJ1939</property>
+          <property name="Description" type="string">An interface library project for SAE J1939 element types, enumerations and constants</property>
+          <property name="DocFormat" type="string">reStructuredText</property>
+          <property name="IsInterfaceLibrary" type="boolean">true</property>
+          <property name="LanguageModelAttribute" type="string">qualified-access-only</property>
+          <property name="Placeholder" type="string">SAEJ1939</property>
+          <property name="Project" type="string">SAEJ1939</property>
+          <property name="Released" type="boolean">false</property>
+          <property name="Title" type="string">SAE J1939 Interfaces</property>
+          <property name="Version" type="version">0.0.2.0</property>
+          <property name="library-category-list" type="library-category-list" />
+        </ProjectInformation>
+      </data>
+    </addData>
+  </contentHeader>
+  <types>
+    <dataTypes>
+      <dataType name="EngineOperatingState">
+        <baseType>
+          <enum>
+            <values>
+              <value name="EngineStopped" value="2#0" />
+              <value name="PreStart" value="2#1" />
+              <value name="Starting" value="2#10" />
+              <value name="WarmUp" value="2#11" />
+              <value name="Running" value="2#100" />
+              <value name="CoolDown" value="2#101" />
+              <value name="EngineStopping" value="2#110" />
+              <value name="PostRun" value="2#111" />
+              <value name="AvailableForSAEAssignment8" value="2#1000" />
+              <value name="AvailableForSAEAssignment9" value="2#1001" />
+              <value name="AvailableForSAEAssignment10" value="2#1010" />
+              <value name="AvailableForSAEAssignment11" value="2#1011" />
+              <value name="AvailableForSAEAssignment12" value="2#1100" />
+              <value name="AvailableForSAEAssignment13" value="2#1101" />
+              <value name="Reserved" value="2#1110" />
+              <value name="NotAvailable" value="2#1111" />
+            </values>
+          </enum>
+        </baseType>
+        <addData>
+          <data name="http://www.3s-software.com/plcopenxml/attributes" handleUnknown="implementation">
+            <Attributes>
+              <Attribute Name="qualified_only" Value="" />
+              <Attribute Name="strict" Value="" />
+            </Attributes>
+          </data>
+          <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+            <ObjectId>c6324bbc-fc60-4d6d-96b9-da659b1f0b0d</ObjectId>
+          </data>
+        </addData>
+        <documentation>
+          <xhtml xmlns="http://www.w3.org/1999/xhtml"> Engine Operating Information (EOI) contains engine parameters related
+   to operation. The Engine Operating State indicates the engine's current
+   operating state or mode. </xhtml>
+        </documentation>
+      </dataType>
+      <dataType name="ERROR">
+        <baseType>
+          <enum>
+            <values>
+              <value name="NO_ERROR" />
+              <value name="TIME_OUT" />
+            </values>
+          </enum>
+        </baseType>
+        <addData>
+          <data name="http://www.3s-software.com/plcopenxml/attributes" handleUnknown="implementation">
+            <Attributes>
+              <Attribute Name="qualified_only" Value="" />
+              <Attribute Name="conditionalshow" Value="DevMode" />
+              <Attribute Name="hide" Value="" />
+            </Attributes>
+          </data>
+          <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+            <ObjectId>f13851e4-c15c-4448-a3cc-5ae43fe11b73</ObjectId>
+          </data>
+        </addData>
+      </dataType>
+      <dataType name="GearRequested">
+        <baseType>
+          <enum>
+            <values>
+              <value name="HoldCurrentGear" value="16#FD" />
+              <value name="ForwardDrivePosition" value="16#FC" />
+              <value name="ParkPosition" value="16#FB" />
+              <value name="ForwardLowPosition" value="16#FA" />
+              <value name="UpshiftOneGear" value="16#F9" />
+              <value name="UpshiftTwoGears" value="16#F8" />
+              <value name="DownshiftOneGear" value="16#F7" />
+              <value name="DownshiftTwoGears" value="16#F6" />
+              <value name="DriveMinus1" value="16#F5" />
+              <value name="DriveMinus2" value="16#F4" />
+              <value name="DriveMinus3" value="16#F3" />
+              <value name="DriveMinus4" value="16#F2" />
+              <value name="DriveMinus5" value="16#F1" />
+              <value name="DriveMinus6" value="16#F0" />
+              <value name="DriveMinus7" value="16#EF" />
+              <value name="BetweenShiftSelectorPositions" value="16#EE" />
+              <value name="BetweenReverseSelectorPositions" value="16#ED" />
+              <value name="BetweenForwardSelectorPositions" value="16#EC" />
+              <value name="BetweenD7AndD6" value="16#EB" />
+              <value name="BetweenD6AndD5" value="16#EA" />
+              <value name="BetweenD5AndD4" value="16#E9" />
+              <value name="BetweenD4AndD3" value="16#E8" />
+              <value name="BetweenD3AndD2" value="16#E7" />
+              <value name="BetweenD2AndD1" value="16#E6" />
+              <value name="BetweenD1AndDrive" value="16#E5" />
+              <value name="BetweenDriveAndNeutral" value="16#E4" />
+              <value name="BetweenNeutralAndReverse" value="16#E3" />
+              <value name="BetweenReverseAndPark" value="16#E2" />
+              <value name="ReselectCurrentPosition" value="16#E1" />
+              <value name="PositionUnknownOrNoButtonsPressed" value="16#E0" />
+              <value name="ReverseSelectorPosition" value="16#DF" />
+            </values>
+          </enum>
+        </baseType>
+        <addData>
+          <data name="http://www.3s-software.com/plcopenxml/attributes" handleUnknown="implementation">
+            <Attributes>
+              <Attribute Name="qualified_only" Value="" />
+              <Attribute Name="strict" Value="" />
+            </Attributes>
+          </data>
+          <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+            <ObjectId>19552db3-a3b1-4164-838d-2b7c4260385b</ObjectId>
+          </data>
+        </addData>
+        <documentation>
+          <xhtml xmlns="http://www.w3.org/1999/xhtml"> Gear request indicators; numeric gear values and reserved ranges are not enum members. </xhtml>
+        </documentation>
+      </dataType>
+      <dataType name="JoystickButtonPressedStatus">
+        <baseType>
+          <enum>
+            <values>
+              <value name="ButtonNotPressed" value="2#0" />
+              <value name="ButtonPressed" value="2#1" />
+              <value name="ErrorIndicator" value="2#10" />
+              <value name="NotAvailable" value="2#11" />
+            </values>
+          </enum>
+        </baseType>
+        <addData>
+          <data name="http://www.3s-software.com/plcopenxml/attributes" handleUnknown="implementation">
+            <Attributes>
+              <Attribute Name="qualified_only" Value="" />
+              <Attribute Name="strict" Value="" />
+            </Attributes>
+          </data>
+          <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+            <ObjectId>d390903a-1d5d-4395-859f-79cf104766bc</ObjectId>
+          </data>
+        </addData>
+        <documentation>
+          <xhtml xmlns="http://www.w3.org/1999/xhtml"> Button status for joysticks 1-10, buttons 1-16 (BJM and EJM). </xhtml>
+        </documentation>
+      </dataType>
+      <dataType name="JoystickDetentPositionStatus">
+        <baseType>
+          <enum>
+            <values>
+              <value name="NotInDetentPosition" value="2#0" />
+              <value name="InDetentPosition" value="2#1" />
+              <value name="ErrorIndicator" value="2#10" />
+              <value name="NotAvailable" value="2#11" />
+            </values>
+          </enum>
+        </baseType>
+        <addData>
+          <data name="http://www.3s-software.com/plcopenxml/attributes" handleUnknown="implementation">
+            <Attributes>
+              <Attribute Name="qualified_only" Value="" />
+              <Attribute Name="strict" Value="" />
+            </Attributes>
+          </data>
+          <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+            <ObjectId>a68420ae-78cf-4b43-a321-abc50203a163</ObjectId>
+          </data>
+        </addData>
+        <documentation>
+          <xhtml xmlns="http://www.w3.org/1999/xhtml"> Detent status for either axis of joysticks 1-10 (BJM1-BJM10). </xhtml>
+        </documentation>
+      </dataType>
+      <dataType name="JoystickNeutralPositionStatus">
+        <baseType>
+          <enum>
+            <values>
+              <value name="NotInNeutralPosition" value="2#0" />
+              <value name="InNeutralPosition" value="2#1" />
+              <value name="ErrorIndicator" value="2#10" />
+              <value name="NotAvailable" value="2#11" />
+            </values>
+          </enum>
+        </baseType>
+        <addData>
+          <data name="http://www.3s-software.com/plcopenxml/attributes" handleUnknown="implementation">
+            <Attributes>
+              <Attribute Name="qualified_only" Value="" />
+              <Attribute Name="strict" Value="" />
+            </Attributes>
+          </data>
+          <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+            <ObjectId>e2512561-aa32-4f91-9d7c-7bcd6d50cc78</ObjectId>
+          </data>
+        </addData>
+      </dataType>
+      <dataType name="JoystickPositivePositionStatus">
+        <baseType>
+          <enum>
+            <values>
+              <value name="NotOnPositiveSideOfNeutral" value="2#0" />
+              <value name="OnPositiveSideOfNeutral" value="2#1" />
+              <value name="ErrorIndicator" value="2#10" />
+              <value name="NotAvailable" value="2#11" />
+            </values>
+          </enum>
+        </baseType>
+        <addData>
+          <data name="http://www.3s-software.com/plcopenxml/attributes" handleUnknown="implementation">
+            <Attributes>
+              <Attribute Name="qualified_only" Value="" />
+              <Attribute Name="strict" Value="" />
+            </Attributes>
+          </data>
+          <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+            <ObjectId>2351f141-8857-4773-a253-b00cd0baca79</ObjectId>
+          </data>
+        </addData>
+      </dataType>
+    </dataTypes>
+    <pous />
+  </types>
+  <instances>
+    <configurations />
+  </instances>
+  <addData>
+    <data name="http://www.3s-software.com/plcopenxml/globalvars" handleUnknown="implementation">
+      <globalVars name="Constants">
+        <addData>
+          <data name="http://www.3s-software.com/plcopenxml/attributes" handleUnknown="implementation">
+            <Attributes>
+              <Attribute Name="conditionalshow" Value="DevMode" />
+              <Attribute Name="hide" Value="" />
+            </Attributes>
+          </data>
+          <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+            <ObjectId>61a71296-3b39-4b4c-9e67-cea520fcd5cc</ObjectId>
+          </data>
+        </addData>
+      </globalVars>
+    </data>
+    <data name="http://www.3s-software.com/plcopenxml/libraries" handleUnknown="implementation">
+      <Libraries>
+        <addData>
+          <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+            <ObjectId>8c1463b5-02f2-427d-bd06-9e39d42fcbff</ObjectId>
+          </data>
+        </addData>
+      </Libraries>
+    </data>
+    <data name="http://www.3s-software.com/plcopenxml/projectstructure" handleUnknown="discard">
+      <ProjectStructure>
+        <Object Name="Library Manager" ObjectId="8c1463b5-02f2-427d-bd06-9e39d42fcbff" />
+        <Folder Name="SAEJ1939">
+          <Folder Name="Enums">
+            <Object Name="EngineOperatingState" ObjectId="c6324bbc-fc60-4d6d-96b9-da659b1f0b0d" />
+            <Object Name="ERROR" ObjectId="f13851e4-c15c-4448-a3cc-5ae43fe11b73" />
+            <Object Name="GearRequested" ObjectId="19552db3-a3b1-4164-838d-2b7c4260385b" />
+            <Object Name="JoystickButtonPressedStatus" ObjectId="d390903a-1d5d-4395-859f-79cf104766bc" />
+            <Object Name="JoystickDetentPositionStatus" ObjectId="a68420ae-78cf-4b43-a321-abc50203a163" />
+            <Object Name="JoystickNeutralPositionStatus" ObjectId="e2512561-aa32-4f91-9d7c-7bcd6d50cc78" />
+            <Object Name="JoystickPositivePositionStatus" ObjectId="2351f141-8857-4773-a253-b00cd0baca79" />
+          </Folder>
+          <Folder Name="GlobalConstants">
+            <Object Name="Constants" ObjectId="61a71296-3b39-4b4c-9e67-cea520fcd5cc" />
+          </Folder>
+        </Folder>
+        <Object Name="Project Information" ObjectId="11c0fc3a-9bcf-4dd8-ac38-efb93363e521" />
+      </ProjectStructure>
+    </data>
+  </addData>
+</project>

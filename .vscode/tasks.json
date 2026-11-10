@@ -13,6 +13,12 @@
       ]
     },
     {
+      "label": "install pre-commit hook",
+      "type": "shell",
+      "command": "git config core.hooksPath scripts",
+      "problemMatcher": []
+    },
+    {
       "label": "watch_extract_st",
       "type": "shell",
       "command": "python scripts/watch_extract_st.py",
@@ -40,12 +46,6 @@
       "dependsOn": []
     },
     {
-      "label": "install pre-commit hook",
-      "type": "shell",
-      "command": "git config core.hooksPath scripts",
-      "problemMatcher": []
-    },
-    {
       "label": "update_version",
       "type": "shell",
       "command": "python scripts/update_version.py",
@@ -60,6 +60,27 @@
       "problemMatcher": [
         "$python"
       ]
+    },
+    {
+      "label": "create_release",
+      "type": "shell",
+      "command": "python scripts/create_release.py",
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "create_release --dry-run",
+      "type": "shell",
+      "command": "python scripts/create_release.py --dry-run",
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "remove .gitignore",
+      "type": "shell",
+      "command": "if (Test-Path -LiteralPath .gitignore) { Remove-Item -LiteralPath .gitignore }"
     }
   ]
 }
