@@ -34,7 +34,6 @@
               "DefaultNamespace": "(string)SAEJ1939",
               "Description": "(string)An interface library project for SAE J1939 element types, enumerations and constants",
               "DocFormat": "(string)reStructuredText",
-              "IsInterfaceLibrary": "(bool)True",
               "LanguageModelAttribute": "(string)qualified-access-only",
               "LibraryCategories": {
                 "@Type": "[aecb3560]",
