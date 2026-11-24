@@ -722,6 +722,7 @@
               "Placeholder": "(string)SAEJ1939",
               "Project": "(string)",
               "Released": "(bool)False",
+              "SIL2": "(bool)True",
               "Title": "(string)SAE J1939 Interfaces",
               "Version": {
                 "@Type": "78562ae7",
