@@ -1,2 +1,0 @@
-# hook scripts must keep LF endings or git-bash's sh fails to parse them
-* text eol=lf
